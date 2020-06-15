@@ -1,0 +1,144 @@
+#dependencies#
+
+GroupId: commons-fileupload
+ArtifactId: commons-fileupload
+version: 1.4
+
+GroupId: commons-io
+ArtifactId: commons-io
+version: 2.6
+
+GroupId: mysql
+ArtifactId: mysql-connector-java
+version: 8.0.19
+
+$extract and place the image folder in webpages directory;
+
+#Directory Structure#
+
+AWP_webapp
+---webpages
+   ---images
+   ---file1.jsp
+   ---file2.jsp
+
+---sourcepackages
+   ---datapack
+   ---dataservices
+   ---servlets
+
+#in the fileupload servlet change the UPLOAD_DIRECTORY path to path of your image directory;
+
+
+$Database configuration(!!!KEEP THE MYSQL USERNAME AND PASSWORD "root" !!!);
+
+//create Database
+
+CREATE DATABASE proserv
+
+//users table
+
+CREATE TABLE users (
+id INT NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(30),
+password VARCHAR(30),
+email VARCHAR(50),
+mob_no VARCHAR(20),
+address VARCHAR(200),
+gender VARCHAR(2),
+profileimage VARCHAR(200) DEFAULT images/img_avatar.png ,
+PRIMARY KEY (id)
+);
+
+//professionals table
+
+CREATE TABLE professionals (
+id INT NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(30), password VARCHAR(30),
+profession VARCHAR(20), email VARCHAR(50),
+mob_no VARCHAR(20),
+address VARCHAR(200),
+gender VARCHAR(2),
+status VARCHAR(20),
+rating VARCHAR(20),
+salary VARCHAR(20),
+total_services VARCHAR(20),
+PRIMARY KEY (id)
+);
+
+
+//admins table
+
+CREATE TABLE admins (
+id INT NOT NULL,
+`name` VARCHAR(50),
+password VARCHAR(50),
+PRIMARY KEY (id)
+);
+
+#Insert some default values in tables for testing#
+
+//packages table
+
+CREATE TABLE packages (
+id INT NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(255) NOT NULL,
+image_url VARCHAR(1000),
+PRIMARY KEY (id)
+);
+
+#Insert these values#
+
+INSERT INTO proserv.packages (`name`, image_url)
+	VALUES ('Cleaning Services', 'images/cleaning_services.jpg');
+INSERT INTO proserv.packages (`name`, image_url)
+	VALUES ('Repairing Services', 'images/repairing_services.jpg');
+INSERT INTO proserv.packages (`name`, image_url)
+	VALUES ('Teaching Services', 'images/teaching_services.jpg');
+
+
+//services table
+
+
+CREATE TABLE services (
+id INT NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(100), price INT,
+description VARCHAR(1000),
+image_url VARCHAR(1000),
+package_id INT,
+PRIMARY KEY (id)
+);
+
+
+#Insert these values#
+
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Room Cleaning ', 300, 'complete room cleaning includes floor wiping ', 'images/room_cleaning.jpg', 1);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Car Cleaning', 200, 'complete car washing along with interior cleaning', 'images/car_cleaning.jpg', 1);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Washroom Cleaning', 250, 'complete washroom cleaning ', 'images/washroom_cleaning.jpg', 1);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Water Repairs', 300, 'repairing of water outlets . Additional charges may apply in case of new part installment is required', 'images/water_repairs.jpg', 2);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Electrical Repairs', 400, 'Reapairing of AC , Refrigerator , TV and other electrical appliances', 'images/electrical_repairs.jpg', 2);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Vehicle Repairs', 450, 'Repairing of all two wheelers and four wheelers', 'images/vehicle_repairs.jpg', 2);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Home Tutor', 3000, 'All the subjects till class 10 for all the boards.', 'images/home_tutor.jpg', 3);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Music Tutor', 3500, 'tutoring will be done for Tabla,Guitar and Harmonium', 'images/music_tutor.jpg', 3);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Yoga Tutor', 2500, 'An interactive yoga session will be taken along with Asans and Pranayams', 'images/yoga_tutor.jpg', 3);
+INSERT INTO proserv.services (`name`, price, description, image_url, package_id)
+	VALUES ('Art Tutor', 4000, 'All art forms are covered ', 'images/art_tutor.jpg', 3);
+
+
+//allotmentqueue table
+
+CREATE TABLE allotmentqueue (
+professional_id
+INT NOT NULL,
+service_id INT,
+PRIMARY KEY (professional_id)
+);

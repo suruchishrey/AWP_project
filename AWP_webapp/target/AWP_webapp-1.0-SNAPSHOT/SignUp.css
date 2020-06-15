@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Apr, 2020, 2:20:26 PM
+    Author     : Lenovo
+*/
+body{
+    /* background: linear#7D3C98; */
+    background-image: linear-gradient(95deg,#2471A3,#7D3C98 80%);
+    /* padding-right: 30px;
+    padding-left: 30px; */
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    /* display: inline-block; */
+    /* position: absolute; */
+
+    /* padding-bottom: 40px; */
+    background-repeat: round;
+    /* background-size: cover; */
+    /* background-attachment: scroll; */
+
+    
+}
+h1{
+    font-family: 'Comic Neue', cursive;
+    color: #FFF;
+    text-align: center;
+    text-shadow:2px 2px 1px black;
+    /* box-shadow: black; */
+    letter-spacing: 3px;
+    font-size: 50px;
+    /* display: flex; */
+    /* line-height: 2px; */
+}
+
+.main{
+    text-align: center;
+}
+.contentUser{
+    background-color: #FFF;
+    width: 600px;
+    height: 600px;
+    
+    border-radius: 10px;
+   
+    padding-top: 40px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 20px;
+    box-sizing: content-box;
+    opacity: 1;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.contentProfessional{
+    background-color: #FFF;
+    width: 600px;
+    height: 650px;
+    
+    border-radius: 10px;
+   
+    padding-top: 40px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 20px;
+    box-sizing: content-box;
+    opacity: 1;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+#field{
+    /* height: auto; */
+    padding: 9px;
+    /* display: flex; */
+    /* float: right; */
+    /* position: relative; */
+    line-height: 1.5px;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid 1px #1C2833;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    overflow: visible;
+    vertical-align: middle;
+    /* display: inline; */
+    
+    /* padding-left: 30px; */
+}
+
+#inputField{
+    /* float: right; */
+    text-align: right;
+    /* padding-left: 200px; */
+    /* padding-right: 50px; */
+    padding-top: 10px;
+    /* display: inline; */
+    /* align-items: right;
+    align-content: right; */
+    
+
+    
+}
+
+label{
+    float: left;
+    /* padding-top: 30px; */
+    padding-left: 30px;
+    font-size: 20px;
+    color: #1C2833;
+    /* font-weight: 10000; */
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1;
+}
+input{
+    /* float: right; */
+    /* line-height: 5; */
+    /* line-break: auto; */
+    text-align: left;
+    /* display: inline-block; */
+}
+
+button{
+    background-color: #1C2833;
+    border-color: #495057;
+    color: #FFF;
+    border-radius: 5px;
+    height: 30px;
+    width:  100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    /* text-shadow:1px 1px 1px black; */
+    box-shadow: 0px 0px 0px 0px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+#button
+{
+    /* background-image: linear-gradient(95deg,#2471A3,#7D3C98 80%); */
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #FFF;
+    border-radius: 5px;
+    height: 30px;
+    width:  100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    /* text-shadow:1px 1px 1px black; */
+    box-shadow: 0px 0px 0px 0px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', sans-serif;
+}

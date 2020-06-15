@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Apr, 2020, 2:07:58 PM
+    Author     : Lenovo
+*/
+
+body{
+    /* background: linear#7D3C98; */
+    background-image: linear-gradient(95deg,#2471A3,#7D3C98 80%);
+    padding-right: 30px;
+    padding-left: 30px;
+    
+    /* padding-bottom: 40px; */
+    background-repeat: round;
+    /* background-size: cover; */
+    /* background-attachment: scroll; */
+
+    
+}
+h1{
+    font-family: 'Comic Neue', cursive;
+    color: #FFF;
+    text-align: center;
+    text-shadow:2px 2px 1px black;
+    /* box-shadow: black; */
+    letter-spacing: 3px;
+    font-size: 50px;
+    /* display: flex; */
+    /* line-height: 2px; */
+}
+
+.tabs{
+    background-color: #1C2833;
+    color: #007bff;
+    /* text-align: center; */
+    width: 300px;
+    padding-top: 0ch;
+    
+}
+
+#current{
+    background-color: #007bff;
+    color: #FFF;
+    width: 90px;
+    margin: 1px;
+    border: solid;
+    margin: 1;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    /* display: inline; */
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+.tabsData{
+    border-color: #007bff;
+    background-color: #1C2833;
+    color: #FFF;
+    width: 90px;
+    margin: 1px;
+    border: solid;
+    margin: 1;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    /* display: inline; */
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.content{
+    background-color: #FFF;
+    width: 450px;
+    height: 300px;
+    /* box-shadow: ; */
+    float: right;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 20px;
+    box-sizing: content-box;
+    opacity: 1;
+    line-height: 1.5;
+}
+.signUP{
+    float: right;
+    width: 450px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 20px black;
+    color: #FFF;
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif;
+    text-justify: auto;
+    text-align: center;
+    
+
+}
+.extra{
+    padding-top: 350px;
+}
+#head{
+    text-align: center;
+    
+}
+label{
+    color: #1C2833;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+button
+{
+    /* background-image: linear-gradient(95deg,#2471A3,#7D3C98 80%); */
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #FFF;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    /* text-shadow:1px 1px 1px black; */
+    box-shadow: 0px 0px 0px 0px;
+}
+footer{
+    padding-top: 70px;
+    padding-left: 605px;
+    float: right;
+    color: #FFF;
+    font-size: 15px;
+
+}
+#username{
+    height: auto;
+    padding: 9px;
+    display: flexbox;
+    line-height: 1.5px;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    overflow: visible;
+    vertical-align: middle;
+}
+#password{
+    height: auto;
+    padding: 10px;
+    display: flexbox;
+    line-height: 1.5px;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    overflow: visible;
+    vertical-align: middle;
+
+}
+
+/* main{
+    align-items: right;
+} */
